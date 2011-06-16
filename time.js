@@ -51,7 +51,15 @@ function wakeTimes(iterations, elementId, remCycleLength, timeGettingToSleep) {
          
       }
 
-      txt.innerHTML += "<p>" + i + " REM cycles: " + newHour + ":" + (totalMins % 60) + amPM +"</p>";
+      if (totalMins % 60 < 10) {
+         var newMins = "0" + (totalMins % 60);
+      }
+
+      else {
+         var newMins = (totalMins % 60);
+      }
+
+      txt.innerHTML += "<p>" + i + " REM cycles: " + newHour + ":" + newMins + amPM +"</p>";
       totalMins = (totalMins) % 1440;
    }
 }
