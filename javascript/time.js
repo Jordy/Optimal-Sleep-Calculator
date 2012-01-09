@@ -23,7 +23,7 @@ function wakeTimes(iterations, elementId, remCycleLength, timeGettingToSleep) {
 
       if (totalMins/60 > 24) {
          if (Math.floor((totalMins/60) % 24) == 0) {
-            var newHour = 12;//Math.floor((totalMins/60) % 24) + 1;
+            var newHour = 12;
          }
 
          else {
@@ -58,8 +58,15 @@ function wakeTimes(iterations, elementId, remCycleLength, timeGettingToSleep) {
       else {
          var newMins = (totalMins % 60);
       }
-
-      txt.innerHTML += "<p>" + i + " REM cycles: " + newHour + ":" + newMins + amPM +"</p>";
+      
+      if (i != iterations) {
+         txt.innerHTML += newHour + ":" + newMins + amPM + ", ";
+      }
+      
+      else {
+         txt.innerHTML += newHour + ":" + newMins + amPM;
+      }
+      
       totalMins = (totalMins) % 1440;
    }
 }
