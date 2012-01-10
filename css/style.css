@@ -1,25 +1,38 @@
+*
+{
+margin: 0;
+}
+
 html
 {
 font: 14px helvetica, arial, clean, sans-serif;
 color: #333333;
 }
 
-h3
+#sleepCalculator
+{
+background-color: #F9F9F9;
+padding: 10px;
+}
+
+#sleepCalculator h3
 {
 color: #6AD97B;
 font-weight: bold;
 font-size: 3em;
+margin-bottom: 10px;
 }
 
-bold
+#sleepCalculator bold
 {
 font-weight: bold;
 font-size: 1.2em;
 color: #993129;
 }
 
-#sleepTimes
+#sleepCalculator #sleepTimes
 {
 font-weight: bold;
 font-size: 1.5em;
+margin-top: 10px;
 }
