@@ -1,22 +1,31 @@
 <html>
 <head>
-
-<title>Optimal Sleep Calculator</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" />
-<script type="text/javascript" src="javascript/time.js"></script>
-<script type="text/javascript" src="javascript/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="javascript/raphael-min.js"></script>
+  <title>Optimal Sleep Calculator</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/workLog.css" type="text/css" />
+  <script type="text/javascript" src="javascript/time.js"></script>
+  <script type="text/javascript" src="javascript/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="javascript/raphael-min.js"></script>
 </head>
-<body onLoad="wakeTimes(6, 'test', 90, 14);">
+<body onLoad="wakeTimes(6, 'sleepTimes', 90, 14);">
 
-<h3>Optimal Sleep Calculator</h3>
-<p>It will take approximately <bold>14</bold> minutes for you to fall asleep.</p>
-REM cycles last for approximately <bold>90</bold> minutes.
-You should try wake up at one of the times listed below to ensure
-you get a good nights sleep.</p>
+  <h3>Optimal Sleep Calculator</h3>
+  <p>It will take approximately <bold>14</bold> minutes for you to fall asleep.</p>
+  REM cycles last for approximately <bold>90</bold> minutes.
+  You should try wake up at one of the times listed below to ensure
+  you get a good nights sleep.</p>
 
-<div id="test">
-</div>
-
+  <div id="sleepTimes"></div>
+  
+  <div id="workLog">
+    <div class="post">
+      <postTitle>Added CSS</postTitle>
+      <date>10th January 2012</date>
+      <p>Today I added CSS to the Optimal Sleep Calculator in an 
+      effort to make the information stand out more.
+      I also changed the javascript so that it no longer tells you 
+      how many REM cycles each wake up time has.</p>
+    </div>
+  </div>
 </body>
 </html>
