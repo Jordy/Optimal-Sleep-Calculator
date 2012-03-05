@@ -1,5 +1,7 @@
-function wakeTimes(iterations, elementId, remCycleLength, timeGettingToSleep) {
+function wakeTimes(iterations, elementId, remCycleLength) {
+   var timeGettingToSleep = parseInt(document.getElementById("fallAsleepTime").value);
    var txt = document.getElementById(elementId);
+   txt.innerHTML = "";
    var now = new Date();
    var totalMins = ((now.getHours()*60) + now.getMinutes())
    var amPM;

@@ -4,16 +4,18 @@
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <script type="text/javascript" src="javascript/time.js"></script>
 </head>
-<body onLoad="wakeTimes(6, 'sleepTimes', 90, 14);">
+<body>
 
   <div id="sleepCalculator">
     <h3>Optimal Sleep Calculator</h3>
     
-    <p>It will take approximately <bold>14</bold> minutes for you to fall asleep.</p>
-    REM cycles last for approximately <bold>90</bold> minutes.
+    <p>It takes me approximately <input id="fallAsleepTime" size="3" value="14"></input> minutes to fall asleep.</p>
+    REM cycles last for between <bold>90</bold> to <bold>120</bold> minutes.
     You should try wake up at one of the times listed below to ensure
     you get a good nights sleep.</p>
-
+    
+    <button onclick="wakeTimes(6, 'sleepTimes', 90);">Crunch The Numbers</button>
+    
     <div id="sleepTimes"></div>
   </div>
 </body>
