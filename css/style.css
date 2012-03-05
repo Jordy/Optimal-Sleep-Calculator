@@ -7,11 +7,12 @@ html
 {
 font: 14px helvetica, arial, clean, sans-serif;
 color: #333333;
+background-image: url('../images/grid_noise.png');
+background-repeat: repeat;
 }
 
 #sleepCalculator
 {
-background-color: #F9F9F9;
 padding: 10px;
 }
 
